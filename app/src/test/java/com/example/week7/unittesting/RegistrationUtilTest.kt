@@ -4,7 +4,7 @@ import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 
-internal class RegistrationUtilTest {
+open class RegistrationUtilTest {
 
     @Test
     fun `empty username returns false`(){
@@ -14,16 +14,6 @@ internal class RegistrationUtilTest {
             "123"
         )
         assertThat(result).isFalse()
-    }
-
-    @Test
-    fun `valid username and correctly repeated password  returns true`(){
-        val result = RegistrationUtil.validateRegistrationInput(
-            "Neeraj",
-            "123" ,
-            "123"
-        )
-        assertThat(result).isTrue()
     }
 
     @Test
@@ -66,6 +56,15 @@ internal class RegistrationUtilTest {
         assertThat(result).isFalse()
     }
 
+    @Test
+    fun `valid username and correctly repeated password  returns true`(){
+        val result = RegistrationUtil.validateRegistrationInput(
+            "Neeraj",
+            "123" ,
+            "123"
+        )
+        assertThat(result).isTrue()
+    }
 
 
 }
