@@ -1,10 +1,11 @@
 package com.example.week7.unittesting
 
 import com.google.common.truth.Truth.assertThat
+import junit.framework.TestCase
 import org.junit.Test
 
 
-open class RegistrationUtilTest {
+open class RegistrationUtilTest{
 
     @Test
     fun `empty username returns false`(){

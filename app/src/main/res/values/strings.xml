@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Week 7</string>
-    <string name="day_1">day 1</string>
+    <string name="espresso_activity">Espresso Activity</string>
+    <string name="another_activity">Another Activity</string>
 </resources>
